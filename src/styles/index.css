@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-ink-50 text-ink-900 dark:bg-ink-950 dark:text-ink-50 font-body antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  @apply bg-amber-400/30;
+}
+
+.container-content {
+  @apply max-w-content mx-auto px-5 sm:px-8 lg:px-10;
+}
+
+.focus-ring {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-50 dark:focus-visible:ring-offset-ink-950;
+}
+
+.section-pad {
+  @apply py-20 sm:py-28;
+}
+
+.card-surface {
+  @apply bg-white dark:bg-ink-900 border border-ink-100 dark:border-ink-700 rounded-2xl shadow-card dark:shadow-cardDark;
+}
+
+.eyebrow {
+  @apply text-sm font-medium text-amber-600 dark:text-amber-400;
+}
