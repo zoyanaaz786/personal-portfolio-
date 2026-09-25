@@ -77,7 +77,7 @@ export const skillCategories = [
   },
   {
     category: 'Other',
-    skills: ['Blockchain Fundamentals']
+    skills: ['CS Core Subjects']
   }
 ]
 
@@ -241,19 +241,19 @@ export const certifications = [
     name: 'Python',
     issuer: 'Infosys Springboard',
     date: '',
-    url: 'https://naazp-portfolio.com/certificates/python.pdf'
+    url: 'https://personal-portfolio-two-indol-48.vercel.app/certificates/python.pdf'
   },
   {
     name: 'Generative AI',
     issuer: 'Simplilearn',
     date: '',
-    url: 'https://C:/Users/cw/Downloads/naazp/portfolio/public/certificates/Generative-AI.pdf'
+    url: 'https://github.com/zoyanaaz786/personal-portfolio-/blob/main/public/certificates/Generative-AI.pdf'
   },
   {
     name: 'Machine Learning & Data Analytics',
     issuer: 'Infosys Springboard',
     date: '',
-    url: '/certificates/ML & Data Analytics.pdf'
+    url: 'https://github.com/zoyanaaz786/personal-portfolio-/blob/main/public/certificates/ML%20%26%20Data%20Analytics.pdf'
   }
 ]
 

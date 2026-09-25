@@ -7,15 +7,23 @@
  * of these (both are drop-in - just fill in your own IDs/keys):
  *
  * --- EmailJS -----------------------------------------------------------
- *   import emailjs from '@emailjs/browser'
- *   export async function sendContactMessage(form) {
- *     await emailjs.send(
- *       'YOUR_SERVICE_ID',
- *       'YOUR_TEMPLATE_ID',
- *       { from_name: form.name, from_email: form.email, subject: form.subject, message: form.message },
- *       'YOUR_PUBLIC_KEY'
- *     )
- *   }
+ *   mport emailjs from '@emailjs/browser'
+
+export async function sendContactMessage(form) {
+  const result = await emailjs.send(
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    {
+      from_name: form.Name,
+      from_email: form.Email,
+      subject: form.Subject,
+      message: form.Message,
+    },
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  )
+
+  return result
+}
  *
  * --- Formspree -----------------------------------------------------------
  *   export async function sendContactMessage(form) {

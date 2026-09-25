@@ -10,7 +10,6 @@ export default function Education() {
         <SectionHeading
           eyebrow="Education"
           title="Academic background"
-          description="Replace the bracketed placeholders below with your real school names, years, and scores."
         />
 
         <div className="relative border-l border-ink-150 dark:border-ink-700 pl-8 space-y-6 max-w-2xl">
